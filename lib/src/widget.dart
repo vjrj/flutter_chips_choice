@@ -1,9 +1,9 @@
 import 'package:chips_choice/src/model/choice_style.dart';
 import 'package:flutter/material.dart';
-import 'model/choice_style.dart';
+
+import 'chip.dart';
 import 'model/choice_item.dart';
 import 'model/types.dart';
-import 'chip.dart';
 
 /// Easy way to provide a single or multiple choice chips.
 class ChipsChoice<T> extends StatefulWidget {
@@ -486,7 +486,7 @@ class C2Spinner extends StatelessWidget {
           child: CircularProgressIndicator(
             strokeWidth: thickness ?? C2Spinner.defaultThickness,
             valueColor: AlwaysStoppedAnimation<Color>(
-                color ?? Theme.of(context).accentColor),
+                color ?? Theme.of(context).colorScheme.secondary),
           ),
         ),
       ),
